@@ -1,0 +1,191 @@
+/*
+color palette to use throughout the website
+color: #FFFAF1;     - white
+color: #FEEFC6;     - light yellow
+color: #FDDF8E;     - yellow
+color: #1E140A;     - dark brown
+*/
+
+/* the body is limited to a specific width to give the website a concise,
+aesthetically pleasing, and simple menu-like look. a personalized photoshopped
+background image and color matching it with a repeating pattern is displayed.
+the font used is Georgia, also certain global attributes for the text are
+specified. */
+body {
+  max-width: 520px;
+  margin: 0 auto;
+  background-color: #BC544B;
+  padding: 40px;
+  background-image: url('html images/RedRipple.png');
+  font-family: "Georgia";
+  font-size: 18px;
+  line-height: 26px;
+}
+
+/* this section is primarily for the sub-category sections of the website as
+they all contain a consistent shape and look to make them stand out beautifully.
+ */
+h3 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: #FEEFC6;
+  border-bottom: 4px double #FFFAF1;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+/* this is used to center, modify, and simplify the unordered list displayed on
+the website. */
+ul {
+  text-align: center;
+  list-style: none;
+  line-height: 24px;
+  padding-left: 0px;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
+/* this fixes the spacing a color-matches the listed aspects. */
+ul li {
+  margin-bottom: 22px;
+  color: #FFFAF1;
+}
+
+/* keeps the image and video along the websites assigned borders of 520px*/
+img {
+  max-width: 100%;
+}
+video {
+  max-width: 100%;
+}
+
+/* modifies the hyperlinks to make them more interactive and aesthetic. */
+a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+a:hover {
+  color: #1E140A;
+  background-color: transparent;
+  text-decoration: none;
+}
+/* used for the first part of the description to make "HAMAD MILKSHAKE" stand
+out */
+.highlight {
+  color: #FEEFC6;
+  font-weight: bold;
+  letter-spacing: .1rem;
+}
+
+/* assigns the attributes to the "HAMAD" part of the logo ontop of the website.
+capitalizing and spacing accordingly. was initially planning to have it move
+with the user as they scrolled down, however I was unable to figure it out as
+it requires parenting elements.*/
+#hamadLogo {
+  color: #FFFAF1;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: .6rem;
+  /* position: sticky;
+  top: 0; */
+}
+
+/* assigns the attributes to the "milkshake" part of the logo ontop of the website.
+ italicizing and spacing accordingly. */
+#milkshakeLogo {
+  color: #FFFAF1;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 0px;
+}
+
+/* assigns attributes to the slogan of the brand. making it thick, italicizing,
+adjusting letter spacing, and spacing around it. */
+#slogan {
+  color: #FEEFC6;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+  letter-spacing: 3px;
+  padding-bottom: 10px;
+  margin-top: 0px;
+  border-bottom: 4px double #FFFAF1;
+}
+
+/* cropping the image to display the portion that I seem most fit. also, fixes
+teh spacing around it. */
+#milkshakeImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 560px;
+  height: 150px;
+  object-fit: cover;
+  object-position: 0 10%;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+/* assigns attributes of the description and justifies it. */
+#desc {
+  color: #FFFAF1;
+  font-size: 16px;
+  font-weight: lighter;
+  text-align: justify;
+}
+
+/* assigns attributes of the categories making them bold and italic. also,
+enlarging them so the viewer does not miss them, and adding a border. */
+.title {
+  color: #FEEFC6;
+  text-align: center;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 26px;
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 4px double #FFFAF1;
+}
+
+/* initially used for the sub-categories, but ended up adjusting 'h3' instead */
+#foodCategory {
+  /* font-size: 20px; */
+}
+
+/* assigns attributes to the foods while making them white */
+#foods {
+  color: #FFFAF1;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+/* assigns attributes to the foods' additions while making them yellowish and
+italic. */
+.addition {
+  color: #FEEFC6;
+  text-align: center;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 16px;
+  display: block;
+}
+
+/* assigns attributes to the foods' prices while making them yellowish and
+small. */
+.prices {
+  color: #FEEFC6;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* assigns a white color to the links until hovered on.*/
+.link {
+  color: #FFFAF1;
+}
