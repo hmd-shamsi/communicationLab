@@ -1,0 +1,129 @@
+/* modifies program's body attributes to match the intended aesthetic */
+body {
+  margin: 0;
+  background: black;
+  font-size: 22px;
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+  min-height: 20em;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* have a dark gradient present between the images and text */
+header::before {
+  content: '';
+  background: linear-gradient(
+    0deg,
+    black,
+    rgba(0, 0, 0, 0)
+  );
+  width: 100%;
+  height: 35%;
+  position: absolute;
+  bottom: 0;
+  z-index: 9;
+}
+
+/* modifies program's image attributes*/
+.images {
+  height: 10vh;
+}
+
+.images img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 145%;
+  object-fit: cover;
+  transition: 0.01s;
+}
+
+section {
+  background: black;
+  color: white;
+  padding: 1.5em;
+  position: relative;
+  z-index: 7;
+}
+
+/* sets the layering system of images */
+.img1 {
+  z-index: 7;
+}
+.img2 {
+  z-index: 6;
+}
+.img3 {
+  z-index: 5;
+}
+.img4 {
+  z-index: 4;
+}
+.img5 {
+  z-index: 3;
+}
+.img6 {
+  z-index: 2;
+}
+.img7 {
+  z-index: 1;
+}
+
+.title {
+  font-size: 7em;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* sets attributes such as color and spacing to h1 text*/
+h1 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  color: #FEEFC6;
+  border-bottom: 4px double #FFFAF1;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+/* sets attributes such as lowercase and white to h2 text*/
+h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  color: white;
+  border-bottom: 4px double white;
+  padding-bottom: 15px;
+}
+
+/* sets attributes such as center and margin spacing to unordered lists*/
+ul {
+  text-align: center;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  list-style: none;
+  line-height: 14px;
+  padding-left: 0px;
+}
+
+/* this fixes the spacing a color-matches the listed aspects. */
+ul li {
+  margin-bottom: 20px;
+  color: white;
+}
