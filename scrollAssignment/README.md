@@ -1,1 +1,3 @@
-test test
+__concept:__
+
+This week's assignment required us to implement the notion of object-oriented programming, which includes utilizing classes and arrays. Given how beneficial and ambitious it could be, I was excited to delve into this coding section. My intention was to focus on implementing the concept more than forcing my usual out-of-the-box idea that might jeopardize my understanding of it. I decided to present an art-motivated sketch representing faded COVID-like cells (green shades) all over the canvas representing how this prominent virus has been a part of our lives and will slowly fade away.
