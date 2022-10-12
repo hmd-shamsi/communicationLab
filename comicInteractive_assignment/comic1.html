@@ -1,0 +1,237 @@
+<html>
+<head>
+    <title>Comic Strip</title> <!--adding title for the webpage-->
+    <link rel="stylesheet" href="comic1.css"/> <!--linking style sheet to add css-->
+    <script defer src="script.js"></script> <!--linking javascript file-->
+
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet"> <!--importing google font-->
+</head>
+
+<body onload = "appearP0()"><!--div containing transition screen with portal gif, appearP0() is called so that only starting screen div is displayed-->
+    <div class="loader" id="loader">
+        <img class="portal" src="portal3.gif">
+    </div>
+
+    <div class="page0" id="page0"> <!--div containing starting screen-->
+            <a onclick="appearP1fromP0()"><h2 class="start">Press Start
+                <br>
+                To Play
+        </h2></a>
+    </div>
+    <div class="page1" id="page1"><!--div containing panel 1 pf comic-->
+        <div class="container-1">
+            <div class="box-1">
+                <img src="panel_1.png"/>
+                </div>
+            </div>
+        <a class="button" onclick="appearP2()"></a><!--button that calls function to move to next div which is repeated on all other pages-->
+        <a class="button_1" onclick="appearP0()"></a><!--button that calls function to move to previous div which is repeated on all other pages-->
+        
+    </div>
+    <div class="page2" id="page2"><!--div containing panel 2 pf comic-->
+        <div class="container-1">
+            <div class="box-1">
+                <img src="panel_2.png"/>
+                </div>
+            </div>
+        <a class="button" onclick="appearP3()"></a>
+        <a class="button_1" onclick="appearP1()"></a>
+    </div>
+    <div class="page3" id="page3"><!--div containing panel 3 pf comic-->
+        <div class="container-1">
+            <div class="box-1">
+                <img src="panel_3.png"/>
+                </div>
+            </div>
+        <a class="button" onclick="appearP4()"></a>
+        <a class="button_1" onclick="appearP2()"></a>
+    </div>
+    <div class="page4" id="page4"><!--div containing panel 4 pf comic-->
+        <div class="container-1">
+            <div class="box-1">
+                <img src="panel_4.png"/>
+                </div>
+            </div>
+        <a class="button" onclick="appearP5()"></a>
+        <a class="button_1" onclick="appearP3()"></a>
+    </div>
+    <div class="page5" id="page5"><!--div containing panel 5 pf comic-->
+        <div class="container-1">
+            <div class="box-1">
+                <img src="panel_5.png"/>
+                </div>
+            </div>
+        <a class="button" onclick="appearP6()"></a>
+        <a class="button_1" onclick="appearP4()"></a>
+    </div>
+    <div class="page6" id="page6"><!--div containing panel 6 pf comic-->
+        <div class="container-1">
+            <div class="box-1">
+                <img src="panel_6.png"/>
+                </div>
+            </div>
+        <a class="button" onclick="appearP7()"></a>
+        <a class="button_1" onclick="appearP5()"></a>
+    </div>
+    <div class="page7" id="page7"><!--div containing panel 7 pf comic-->
+        <div class="container-1">
+            <div class="box-1">
+                <img src="panel_7.png"/>
+                </div>
+            </div>
+        <a class="button_1" onclick="appearP6()"></a>
+    </div>
+
+    <h4 class="title">The Adventures of Professor S.</h4>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        // defining all required variables into javascript from html
+        var loader = document.getElementById('loader');
+        var page0 = document.getElementById('page0');
+        var page1 = document.getElementById('page1');
+        var page2 = document.getElementById('page2');
+        var page3 = document.getElementById('page3');
+        var page4 = document.getElementById('page4');
+        var page5 = document.getElementById('page5');
+        var page6 = document.getElementById('page6');
+        var page7 = document.getElementById('page7');
+
+        var audio = new Audio('soundtrack.mp3');
+
+        function appearP0() {  //functions for only displaying page0 div
+            page0.style.display = "block";
+            page1.style.display = "none";
+            page2.style.display = "none";
+            page3.style.display = "none";
+            page4.style.display = "none";
+            page5.style.display = "none";
+            page6.style.display = "none";
+            page7.style.display = "none";
+
+            audio.play();
+           
+        }
+        function appearP1() {  //functions for only displaying page1 div
+            loader.style.left = "0";
+            setTimeout(function(){
+                loader.style.left = "-100%";
+                page0.style.display = "none";
+                page1.style.display = "block";
+                page2.style.display = "none";
+                page3.style.display = "none";
+                page4.style.display = "none";
+                page5.style.display = "none";
+                page6.style.display = "none";
+                page7.style.display = "none";
+                
+                // audio1.play();
+            }, 1000)
+        }
+        function appearP2() {  //functions for only displaying page2 div
+            loader.style.left = "0";
+            setTimeout(function(){
+                loader.style.left = "-100%";
+                page0.style.display = "none";
+                page1.style.display = "none";
+                page2.style.display = "block"; 
+                page3.style.display = "none";
+                page4.style.display = "none";
+                page5.style.display = "none";
+                page6.style.display = "none";
+                page7.style.display = "none";
+            }, 1000)
+        }
+        function appearP3() {  //functions for only displaying page3 div
+            loader.style.left = "0";
+            setTimeout(function(){
+                loader.style.left = "-100%";
+                page0.style.display = "none";
+                page1.style.display = "none";
+                page2.style.display = "none"; 
+                page3.style.display = "block";
+                page4.style.display = "none";
+                page5.style.display = "none";
+                page6.style.display = "none";
+                page7.style.display = "none";
+            }, 1000)
+        }
+        function appearP4() {  //functions for only displaying page4 div
+            loader.style.left = "0";
+            setTimeout(function(){
+                loader.style.left = "-100%";
+                page0.style.display = "none";
+                page1.style.display = "none";
+                page2.style.display = "none"; 
+                page3.style.display = "none";
+                page4.style.display = "block";
+                page5.style.display = "none";
+                page6.style.display = "none";
+                page7.style.display = "none";
+            }, 1000)
+        }
+        function appearP5() {  //functions for only displaying page5 div
+            loader.style.left = "0";
+            setTimeout(function(){
+                loader.style.left = "-100%";
+                page0.style.display = "none";
+                page1.style.display = "none";
+                page2.style.display = "none"; 
+                page3.style.display = "none";
+                page4.style.display = "none";
+                page5.style.display = "block";
+                page6.style.display = "none";
+                page7.style.display = "none";
+            }, 1000)
+        }
+        function appearP6() {  //functions for only displaying page6 div
+            loader.style.left = "0";
+            setTimeout(function(){
+                loader.style.left = "-100%";
+                page0.style.display = "none";
+                page1.style.display = "none";
+                page2.style.display = "none"; 
+                page3.style.display = "none";
+                page4.style.display = "none";
+                page5.style.display = "none";
+                page6.style.display = "block";
+                page7.style.display = "none";
+            }, 1000)
+        }
+        function appearP7() {  //functions for only displaying page7 div
+            loader.style.left = "0";
+            setTimeout(function(){
+                loader.style.left = "-100%";
+                page0.style.display = "none";
+                page1.style.display = "none";
+                page2.style.display = "none"; 
+                page3.style.display = "none";
+                page4.style.display = "none";
+                page5.style.display = "none";
+                page6.style.display = "none";
+                page7.style.display = "block";
+            }, 1000)
+        }
+        function appearP1fromP0() {  //functions for only displaying page1 div from page0
+            page0.style.display = "none";
+            page1.style.display = "block";
+            page2.style.display = "none"; 
+            page3.style.display = "none";
+            page4.style.display = "none";
+            page5.style.display = "none";
+            page6.style.display = "none";
+            page7.style.display = "none";
+        }
+
+    </script>
+ <!-- <embed  class="space" src="space.mp3" loop="true" autostart="true" width="2" height="0"> -->
+</body>
+
+</html>
