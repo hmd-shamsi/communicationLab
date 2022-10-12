@@ -1,6 +1,6 @@
 ## ***concept***
 
-test test
+This week's assignment required us to make an interactive comic
 
 <br>
 
