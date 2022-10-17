@@ -1,12 +1,12 @@
 ## ***concept***
 
-This week's assignment required us to make an interactive comic
+This week's assignment required us to make an interactive comic.
 
 <br>
 
 ## ***method***
 
-test test test
+test
 
 <br>
 
@@ -18,4 +18,4 @@ test
 
 ## ***future improvement***
 
-t
+test
