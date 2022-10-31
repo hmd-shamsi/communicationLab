@@ -1,1 +1,1 @@
-Make a soundscape from your hometown using Audacity. The soundscape should be approximately 2 minutes long and create a feeling of your hometown using several sounds composed together. Export your soundscape as an mp3. Upload your soundscape to Google Drive and submit the link here.
+it was extremely exciting working on audio this week. I faced challenges with my phone pickingup specific sounds, yet I managed to make everything work using the sound editing program.
